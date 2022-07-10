@@ -2,7 +2,9 @@
   font-family: monospace;
   background: papayawhip;
   display: flex;
+  /* center on axis and cross axis */
   align-items: center;
+  /* makes links go to edges */
   justify-content: space-between;
   padding: 10px;
 }
@@ -12,13 +14,16 @@
   font-weight: 900;
   color: tomato;
   background: white;
+  /* padding from edge of header */
   padding: 4px 32px;
-  justify-content: cen
+  /* center on axis and cross axis */
+  justify-content: center;
   align-items: center;
 }
 
 ul {
   display: flex;
+  /* gap between links */
   gap: 10px;
   margin: 0;
   padding: 0;
@@ -29,6 +34,7 @@ ul {
 a {
   font-size: 22px;
   background: white;
+  /* padding from edge of header */
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
