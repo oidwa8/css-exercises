@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +19,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  padding: 8px 10px;
 }
 
 input {
@@ -24,4 +29,45 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* added header */
+.header, .footer {
+  display: flex;
+  /* make links go to edges */
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eee;
+}
+
+/* added ul */
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+
+  /* you know the bullet point that would be on the left? normally it's shifted to the right but this takes it out, for some reason. */
+  margin: 0;
+  padding: 0;
+}
+
+/* remove under line */
+a {
+  text-decoration: none;
+}
+
+/* logo and search and buttons */
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  /* expand properly */
+  flex: 1;
+  flex-direction: column;
 }
