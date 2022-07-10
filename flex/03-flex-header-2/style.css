@@ -12,8 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* makes center on cross axis*/
   display: flex;
   align-items: center;
+  
 }
 
 .profile-image {
@@ -48,12 +50,14 @@ a {
 
 ul {
   list-style-type: none;
+  /* gaps between links */
   display: flex;
   gap: 16px;
 }
 
 .links {
   display: flex;
+  /* pushes other links to the right */
   margin-right: auto;
   padding: 8px;
   gap: 16px;
