@@ -15,11 +15,33 @@ body {
   justify-content: center;
 }
 
+/* added header */
+.header {
+  font-weight: bold;
+  font-size: large;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* added text */
+.text {
+  margin-bottom: 16px;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  
+  /** made into flex, +Gap +pad **/
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  
 }
 
 .icon {
@@ -33,6 +55,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* to make not shrink */
+  flex-shrink: 0;
 }
 
 .close-button {
